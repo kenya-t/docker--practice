@@ -14,7 +14,7 @@ function connect(){
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
         echo '成功です。';
-    } catch(PDOExeption $e){
+    } catch(PDOException $e){
         echo '接続失敗です'. $e->getMessage();
         exit();
     }
